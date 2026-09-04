@@ -19,7 +19,7 @@ frascos =[
 
 
 for frasco in frascos:
-    print("ID:", frasco["id"])
-    print("Plantas:", frasco["plantas"])
-    print("Estado:", frasco["estado"])
-    print()
+    if frasco["plantas"]>=10:
+            print(frasco["id"], "→ Produção adequada")
+    else:
+           print(frasco["id"], "→ Produção baixa")
